@@ -4,7 +4,7 @@ Theme URI: http://github.com/saumya010/leo
 Author: saumya010
 Author URI: http://github.com/saumya010
 Description: Leo, a neat and clean theme to showcase your work.
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: responsive-layout,full-width-template,blue
@@ -168,6 +168,9 @@ p {
 .flex-control-thumbs img {
     height: 150px
 }
+.flex-control-thumbs {
+    display: none;
+}
 .flexslider .slides img {
     height: 550px
 }
@@ -188,7 +191,6 @@ p {
     border: 1px solid #e5e5e5;
     padding: 20px 10px;
     font-family: Roboto;
-    box-shadow: 0px 5px 15px #ddd;
 }
 .leo-contact-me h3 {
     margin-top: 0;
