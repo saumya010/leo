@@ -18,11 +18,13 @@ function leo_customize_register( $wp_customize ) {
             public $type = 'textarea';
             public function render_content() {
             ?>
-                <label>
-                    <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
-                    <textarea rows="5" style="width:98%;" <?php $this->link(); ?>><?php echo esc_textarea($this->value()); ?></textarea>
-                </label>
-            <?php
+    <label>
+        <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+        <textarea rows="5" style="width:98%;" <?php $this->link(); ?>>
+            <?php echo esc_textarea($this->value()); ?>
+        </textarea>
+    </label>
+    <?php
             }
         }
         //new section slider        
@@ -206,6 +208,22 @@ function leo_customize_register( $wp_customize ) {
                 )
             )
         );
+	//new section blog       
+        $wp_customize->add_section('leo_blog_section', array(
+            'title' => __('Blog Settings', 'leo'),
+            'priority' => 13,
+        ));
+        $wp_customize->add_setting('leo_blog_heading', array(
+            'sanitize_callback' => 'sanitize_text_field',
+            'transport' => 'postMessage',
+        ));
+
+        $wp_customize->add_control('leo_blog_heading', array(
+            'label' => __('Heading', 'leo'),
+            'section' => 'leo_blog_section',
+            'settings' => 'leo_blog_heading',
+            'priority' => 1,
+        ));
 }
 add_action( 'customize_register', 'leo_customize_register' );
 

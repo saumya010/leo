@@ -3,11 +3,11 @@ Theme Name: Leo
 Theme URI: http://github.com/saumya010/leo
 Author: saumya010
 Author URI: http://github.com/saumya010
-Description: Leo, a neat and clean theme to showcase your work.
-Version: 1.0.6
+Description: Leo, a neat and clean theme to showcase your work. Leo gives you various customization possiblities from the theme customizer. Just add your favourite widget and you are ready to go.
+Version: 1.0.7
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Tags: responsive-layout,full-width-template,blue
+Tags: responsive-layout,full-width-template,blue, custom-menu, featured-images, light, right-sidebar, customizer, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -222,7 +222,6 @@ p {
 }
 .leo-port-title {
     padding-bottom: 10px;
-    padding-left: 15px;
     text-align: center;
 }
 .sidebar-padder {
@@ -371,6 +370,63 @@ p {
     margin-top: -20px;
     background-color: #fff!important
 }
+.leo-page-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.leo-home-blog {
+    padding-bottom: 50px;
+}
+.leo-blog-inner {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    box-shadow: 0 0 20px #ddd;
+}
+.leo-blog-inner.col-md-12 .leo-post-img img {
+    width: 100%;
+}
+.leo-post-title h3 {
+    color: #000000;
+}
+.leo-post-title a:hover {
+    text-decoration: none;
+}
+.author-meta {
+    font-style: italic;
+}
+.author-meta a {
+    color: #000;
+}
+.leo-post-meta {
+    display: inline-block;
+}
+.leo-blog-btm-right {
+    diaply: inline-block;
+    float: right;
+}
+.leo-blog-btm-right a {
+    color: #000;
+}
+.leo-blog-btm-right a:hover {
+    text-decoration: none;
+}
+
+#nav-below {
+    margin-bottom: 20px;
+}
+.pager {
+    padding: 0;
+}
+.pager li {
+    list-style: none;
+    display: inline-block;
+}
+.pager li.nav-next {
+    float: right;
+}
+
 @media (max-width: 320px) {
     .site-navigation-inner {
         float: none;
